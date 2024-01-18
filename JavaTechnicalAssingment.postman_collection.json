@@ -1,0 +1,621 @@
+{
+	"info": {
+		"_postman_id": "c4b0f6c2-e94d-424c-af22-ca18f23dc135",
+		"name": "JavaTechnicalAssingment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24330124"
+	},
+	"item": [
+		{
+			"name": "Doctor",
+			"item": [
+				{
+					"name": "addDoctor_1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"doctorName\": \"Reena mehta\",\r\n    \"doctorCity\": \"Faridabad\",\r\n    \"doctorEmail\":\"reena@gmail.com\",\r\n    \"doctorPhoneNumber\":\"9876543209\",\r\n    \"doctorSpeciality\":\"Gnecology\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/doctor/adddoctor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"doctor",
+								"adddoctor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addDoctor_2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"doctorName\": \"Manan Ameta\",\r\n    \"doctorCity\": \"Noida\",\r\n    \"doctorEmail\":\"manan123@gmail.com\",\r\n    \"doctorPhoneNumber\":\"6676543209\",\r\n    \"doctorSpeciality\":\"Orthopedic\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/doctor/adddoctor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"doctor",
+								"adddoctor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addDoctor_3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"doctorName\": \"Rahul Nagda\",\r\n    \"doctorCity\": \"Delhi\",\r\n    \"doctorEmail\":\"rahul@gmail.com\",\r\n    \"doctorPhoneNumber\":\"7766543209\",\r\n    \"doctorSpeciality\":\"ENT Specialist\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/doctor/adddoctor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"doctor",
+								"adddoctor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addDoctor_4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"doctorName\": \"pragya sharma\",\r\n    \"doctorCity\": \"Noida\",\r\n    \"doctorEmail\":\"pragya456@gmail.com\",\r\n    \"doctorPhoneNumber\":\"9876433789\",\r\n    \"doctorSpeciality\":\"Dermatology\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/doctor/adddoctor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"doctor",
+								"adddoctor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "suggestDoctor",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":9,\r\n    \"symp\":\"Arthritis\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/doctor/suggestdoctor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"doctor",
+								"suggestdoctor"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "symp",
+									"value": "Arthritis",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "No_doctor_at_loction_check",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":8,\r\n    \"symp\":\"Ear Pain\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/doctor/suggestdoctor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"doctor",
+								"suggestdoctor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "still_need_to_expand_check",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":11,\r\n    \"symp\":\"Skin Infection\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/doctor/suggestdoctor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"doctor",
+								"suggestdoctor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "validNamecheck",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"doctorName\": \"Re\",\r\n    \"doctorCity\": \"Faridabad\",\r\n    \"doctorEmail\":\"reena678@gmail.com\",\r\n    \"doctorPhoneNumber\":\"9876543209\",\r\n    \"doctorSpeciality\":\"Gnecology\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/doctor/adddoctor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"doctor",
+								"adddoctor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "validPhonecheck",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"doctorName\": \"Reena mehta\",\r\n    \"doctorCity\": \"Faridabad\",\r\n    \"doctorEmail\":\"reena678@gmail.com\",\r\n    \"doctorPhoneNumber\":\"98765679\",\r\n    \"doctorSpeciality\":\"Gnecology\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/doctor/adddoctor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"doctor",
+								"adddoctor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "validEmailcheck",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"doctorName\": \"Reena mehta\",\r\n    \"doctorCity\": \"Faridabad\",\r\n    \"doctorEmail\":\"reena990gmail.com\",\r\n    \"doctorPhoneNumber\":\"9876543209\",\r\n    \"doctorSpeciality\":\"Gnecology\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/doctor/adddoctor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"doctor",
+								"adddoctor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "validCitycheck",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"doctorName\": \"Reena mehta\",\r\n    \"doctorCity\": \"Faridabadgfdgdfhgedsagasdgdggdgdgdgdwgeg\",\r\n    \"doctorEmail\":\"reena@gmail.com\",\r\n    \"doctorPhoneNumber\":\"9876543209\",\r\n    \"doctorSpeciality\":\"Gnecology\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/doctor/adddoctor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"doctor",
+								"adddoctor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DuplicateEntrycheck",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"doctorName\": \"Rahul sharma\",\r\n    \"doctorCity\": \"Delhi\",\r\n    \"doctorEmail\":\"rahul@gmail.com\",\r\n    \"doctorPhoneNumber\":\"7766543270\",\r\n    \"doctorSpeciality\":\"ENT Specialist\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/doctor/adddoctor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"doctor",
+								"adddoctor"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Patinets",
+			"item": [
+				{
+					"name": "addPatient_1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"patientName\": \"Tanuja mehta\",\r\n    \"patientCity\": \"Delhi\",\r\n    \"patientEmail\":\"tanuja@gmail.com\",\r\n    \"patientPhoneNumber\":\"7802345609\",\r\n    \"patientSymptom\":\"Ear Pain\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/patient/addpatient",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"patient",
+								"addpatient"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addPatient_2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"patientName\": \"Kunal mehta\",\r\n    \"patientCity\": \"Noida\",\r\n    \"patientEmail\":\"kunal@gmail.com\",\r\n    \"patientPhoneNumber\":\"7352345609\",\r\n    \"patientSymptom\":\"Arthritis\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/patient/addpatient",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"patient",
+								"addpatient"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addPatient_3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"patientName\": \"Bhavini Ameta\",\r\n    \"patientCity\": \"Faridabad\",\r\n    \"patientEmail\":\"bhavini@gmail.com\",\r\n    \"patientPhoneNumber\":\"7802885609\",\r\n    \"patientSymptom\":\"Dysmenorrhea\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/patient/addpatient",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"patient",
+								"addpatient"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "duplicateEntrycheck",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"patientName\": \"Anukriti Sharma\",\r\n    \"patientCity\": \"Jaipur\",\r\n    \"patientEmail\":\"anukriti@gmail.com\",\r\n    \"patientPhoneNumber\":\"7802345600\",\r\n    \"patientSymptom\":\"Skin Infection\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/patient/addpatient",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"patient",
+								"addpatient"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "validNamecheck",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"patientName\": \"T\",\r\n    \"patientCity\": \"Delhi\",\r\n    \"patientEmail\":\"tanuja32@gmail.com\",\r\n    \"patientPhoneNumber\":\"7802345609\",\r\n    \"patientSymptom\":\"Ear Pain\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/patient/addpatient",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"patient",
+								"addpatient"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "validPhonecheck",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"patientName\": \"Tanuja mehta\",\r\n    \"patientCity\": \"Delhi\",\r\n    \"patientEmail\":\"tanuja53@gmail.com\",\r\n    \"patientPhoneNumber\":\"7802609\",\r\n    \"patientSymptom\":\"Ear Pain\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/patient/addpatient",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"patient",
+								"addpatient"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "validEmailcheck",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"patientName\": \"Tanuja mehta\",\r\n    \"patientCity\": \"Delhi\",\r\n    \"patientEmail\":\"tanujagmail.com\",\r\n    \"patientPhoneNumber\":\"7802345609\",\r\n    \"patientSymptom\":\"Ear Pain\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/patient/addpatient",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"patient",
+								"addpatient"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "validcitycheck",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"patientName\": \"Tanuja mehta\",\r\n    \"patientCity\": \"Delhijfdvbsdjfbgksdjbgkasbndkbnsdkgdskgb\",\r\n    \"patientEmail\":\"tanuja00@gmail.com\",\r\n    \"patientPhoneNumber\":\"7802345609\",\r\n    \"patientSymptom\":\"Ear Pain\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/patient/addpatient",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"patient",
+								"addpatient"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
